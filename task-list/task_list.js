@@ -32,7 +32,7 @@ $(document).ready(() => {
       textbox.focus();
     } else {
       let tasks = getCookieByName("tasks");
-      tasks = tasks.concat(task, "\n");
+      if (!tasks) tasks = tasks.concat(task, "\n");
       setCookie("tasks", tasks, 21);
       textbox.val("");
       $("#task_list").val(getCookieByName("tasks"));
