@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Task List</title>
+        <link rel="stylesheet" href="task_list.css" />
+    </head>
+    <body>
+        <main>
+            <h1>Tutorial - page 3</h1>
+            <p>Here's the third thing you need to know about our site.</p>
+            <input type="button" id="prev" value="Prev" />
+            <input type="button" id="next" value="Finish" />
+        </main>
+        <script>
+            $("#prev").click(() => location.replace("tutorial2.html"));
+            $("#next").click(() => location.replace("main.html"));
+        </script>
+    </body>
+</html>
