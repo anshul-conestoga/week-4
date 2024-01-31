@@ -1,4 +1,5 @@
 #tasks {
     margin-top: 0;
     float: right;
+    flex-wrap: nowrap;
 }
